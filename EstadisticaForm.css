@@ -1,0 +1,324 @@
+h1{font-size: 3.5cm;}
+
+h2{font-size: 2.5cm;}
+
+h3{font-size: 1.5cm;}
+
+p{font-size: 1.0cm;}
+
+ul{list-style: none;}
+
+li{font-size: 2cm;}
+
+*{ box-sizing: border-box;}
+
+html{
+     scroll-behavior: smooth;
+}
+button{
+     font-size: 1.3cm;
+     font-weight: bold;
+     padding: 10px 25px;
+     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     color: aliceblue;
+     background-color: #ff1515;
+}
+
+
+body{
+     background-color: azure;
+     font-family: "Fira Code Light" ;
+     margin: 0;
+}
+
+button:hover{
+     background-color: darkred;
+}
+
+.container{
+     max-width: 1480px;
+     margin: auto;
+}
+
+.color-acento{
+     color: #f60404;
+}
+
+header{
+     background-color: #a62121;
+}
+
+header .logo{
+     margin: 0 ;
+     padding: 25px 30px;
+     font-weight: bold;
+     color: azure;
+     font-size: 1.6cm;
+}
+
+header .container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+header nav {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding-bottom: 25px;
+     font-size: 0.7cm;
+}
+
+header a{
+     padding: 5px 12px;
+     text-decoration: none;
+     font-weight: bold;
+     color: azure;
+}
+
+header a:hover{
+     color: #000000;
+}
+
+#hero{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     color: white;
+     background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+     )
+     ,url("media/hero.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+}
+
+#hero h1{
+     color: azure;
+}
+
+#Informacion-Personal .container{
+     text-align: center;
+     padding: 200px 12px;
+}
+
+#Desarrollo-del-proyecto{
+     background-color: #f60404;
+     color: white;
+     text-align: center;
+}
+#Desarrollo-del-proyecto button{
+     font-size: 1.3cm;
+     font-weight: bold;
+     padding: 10px 25px;
+     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     color: #ff0000;
+     background-color: #ffffff;
+}
+
+#Desarrollo-del-proyecto button:hover{
+     color: aliceblue;
+     background-color: #f30707;
+}
+
+#Desarrollo-del-proyecto .container{
+     padding: 150px 12px;
+}
+ #Desarrollo-del-proyecto h2{
+      margin-top: 0;
+ }
+#Desarrollo-del-proyecto p{
+     display: none;
+     font-size: 3.2cm;
+}
+
+#Desarrollo-del-proyecto .carta{
+     background-position: center center;
+     background-size: cover;
+     padding: 50px;
+     margin: 20px;
+     border-radius: 15px;
+}
+.carta:first-child{
+     background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+     )
+     ,url("media/objetivos.jpg");
+}
+
+.carta:nth-child(2){
+     background-image: linear-gradient(
+             0deg,
+             rgba(0,0,0,0.5),
+             rgba(0,0,0,0.5)
+     )
+     ,url("media/desarrollo.jpg");
+}
+
+.carta:nth-child(3){
+     background-image: linear-gradient(
+             0deg,
+             rgba(0,0,0,0.5),
+             rgba(0,0,0,0.5)
+     )
+     ,url("media/conclusion.jpg");
+}
+
+
+#Indice .container{
+     text-align: center;
+}
+
+#Indice li{
+     margin : 16px 0px;
+     font-weight: bold;
+}
+
+#Despliegue{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 80vh;
+     color: white;
+     background-color: red;
+}
+
+#Despliegue h2{
+     font-size: 5vw;
+}
+
+#Despliegue button{
+     font-size: 5vw;
+}
+
+footer {
+     background-color: #f6e3f1;
+}
+
+footer p{
+     margin: 0;
+     padding: 12px;
+     color: #f6e3f1;
+}
+
+footer .container{
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+     header{
+          position: fixed ;
+          width: 100% ;
+     }
+     header .container{
+          flex-direction: row;
+          justify-content: space-between;
+     }
+
+     header nav {
+          flex-direction: row;
+          padding-bottom: 0;
+          padding-right: 20px;
+     }
+
+
+
+     #Informacion-Personal .equipo{
+          display: flex;
+          width: 330px;
+          height: 220px;
+          margin: 20px;
+          gap: 20px;
+     }
+     #Informacion-Personal .img{
+          width: 0px;
+          flex-grow: 1;
+          object-fit: cover;
+          opacity: .8;
+          transition: .5s ease;
+     }
+     #Informacion-Personal .img:hover{
+          cursor: crosshair;
+          width: 300px;
+          opacity: 1;
+          filter: contrast(120%);
+     }
+
+     #Desarrollo-del-proyecto .informacion{
+          display: flex;
+          padding: 20px;
+     }
+
+     #Desarrollo-del-proyecto p{
+          font-size: 0.5cm;
+          display: block;
+          margin-bottom: 10px;
+     }
+
+     #Desarrollo-del-proyecto h3{
+          margin-top: 0;
+     }
+
+     #Desarrollo-del-proyecto .carta{
+          padding: 30px;
+          justify-content: space-between;
+     }
+
+     #Indice {
+          background-image: url("media/descarga (1).png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: calc(100vw - 500px) 0px;
+     }
+
+     #Indice .container{
+          text-align: initial;
+     }
+
+     #Indice ul{
+          margin-left: 100px;
+     }
+@media (min-width: 1200px){
+     #Indce {
+          background-position-x: calc(100vw - 800px) ;
+     }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
